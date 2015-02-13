@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>SAPUI5/Fiori Demo</title>
+
+		<script
+			id="sap-ui-bootstrap"
+			src="https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-libs="sap.m, sap.ui.layout"
+			data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-resourceroots='{
+				"sap.ui.demo.myFiori": "./"
+			}' >
+		</script>
+	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
+		<script>
+			new sap.ui.core.ComponentContainer({
+				name : "sap.ui.demo.myFiori"
+			}).placeAt("content");
+		</script>
+		
+ 
+        <style>  
+            .myMap {  
+                height: 30%;  
+                width: 80%  
+            }  
+        </style>  
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
+
+
+
+<!-- mvk@ca.ibm.com -->
+</html>

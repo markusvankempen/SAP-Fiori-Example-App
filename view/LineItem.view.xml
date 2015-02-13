@@ -1,0 +1,41 @@
+<core:View
+	controllerName="sap.ui.demo.myFiori.view.LineItem"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core" >
+	<Page
+		id="page"
+		title=" {i18n>LineItemTitle}"
+		showNavButton="true"
+		navButtonPress="handleNavBack" >
+		<footer>
+			<Bar>
+			</Bar>
+		</footer>
+		<content>
+			<ObjectHeader
+				title="{DESCRIPTION}"
+				number="{VKPBR}"
+				numberUnit="{WAERS}" >			
+			</ObjectHeader>
+
+			<ObjectHeader
+				title="{PLANTADDR}"
+				number="{STOCK}"
+				numberUnit="{BASEUOM}" >
+				<attributes>
+					<ObjectAttribute text="{PLANTADDR}" />
+					<ObjectAttribute text="{STRAS}" />
+					<ObjectAttribute text="{ORT01}, {REGIO} {PSTLZ}" />
+				</attributes>
+			</ObjectHeader>
+
+		
+		<App id="appMaps">  
+        <Page id="mapPage" enableScrolling="false" title="Store Location"  width="50px"  height="30px">  
+			<HBox id="map_canvas" name="markus" fitContainer="true" justifyContent="Center" alignItems="Center" width="50px" height="30px" />  
+        </Page>          
+		</App>  
+
+		</content>
+	</Page>
+</core:View>
