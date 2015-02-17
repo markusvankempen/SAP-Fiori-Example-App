@@ -40,7 +40,6 @@ function mvk(txt)
 
 function codeAddress(address) {
     mvk(address);
-//    var address =  "Atlântica, 702 - Copacabana - Rio de Janeiro ";
     ///document.getElementById('address').value;
     geocoder.geocode({
         'address': address

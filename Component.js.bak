@@ -16,6 +16,8 @@ sap.ui.core.UIComponent.extend("sap.ui.demo.myFiori.Component", {
 		var oModel = new sap.ui.model.json.JSONModel("model/mock.json");
 
 		sap.ui.getCore().setModel(oModel, "PLANTS");
+//http://URLS/sap/bc/mfcall/Z_BAPI_MATERIALMASTER_GETLIST?format=json&MATNUM=100005*&DESCRIPTION=*&PLANTNAME=*&PLANTNUM=2*&DEEPSTRUCTURE=Y
+//		var oModel = new sap.ui.model.json.JSONModel("url/sap/bc/mfcall/Z_BAPI_MATERIALMASTER_GETLIST?format=json&MATNUM=*&DESCRIPTION=HEND*&STOCKAMT=1");
 		oView.setModel(oModel);
 
 		// set i18n model

@@ -42,7 +42,7 @@ sap.ui.controller("sap.ui.demo.myFiori.view.LineItem", {
 
       //  if (!this.initialized) {  
 		if(true){
-		  var pos = new google.maps.LatLng(44.6488625, 63.5753196);  //Halifax
+		  var pos = new google.maps.LatLng(-34.397, 150.644),  //Toronto 
             this.initialized = true;  
             geocoder = new google.maps.Geocoder();  
             var mapOptions = {  
@@ -66,10 +66,7 @@ sap.ui.controller("sap.ui.demo.myFiori.view.LineItem", {
       map.setCenter(pos);
  
 
-	 codeAddress("2559 Agricola Street Halifax, NS B3K 4C4");
-// 	 codeAddress("214 Chain Lake Drive Halifax, NS B3S 1C5");
-//     codeAddress("506 Bloor Street West Toronto, ON M5S 1Y3");
-	
+	 codeAddress("120 Bloor Street East, Toronto, ON");
         }  
     }  
 });
